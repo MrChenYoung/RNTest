@@ -16,6 +16,7 @@ class HomeScreen extends Component{
         主页
       </Text>
       <Button title='点击' onPress={()=>{alert(this.props.navigation.pageName)}}/>
+      <Text>{this.props.navigation.state.params.token}</Text>
     </View>
   }
 }
@@ -46,8 +47,10 @@ const navigationRouteConfig = {
   }
 }
 
+const token = this.props.token;
 const navigationOptions = {
-  initialRouteName:'Home'
+  initialRouteName:'Home',
+initialRouteParams:{"token":token}
 }
 
 const NavMain = StackNavigator(navigationRouteConfig,navigationOptions);

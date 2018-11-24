@@ -14,7 +14,6 @@
 		FF3E63F120CCC489006A2D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3E63F020CCC489006A2D0B /* Assets.xcassets */; };
 		FF3E63F420CCC489006A2D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3E63F220CCC489006A2D0B /* LaunchScreen.storyboard */; };
 		FF3E63F720CCC489006A2D0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3E63F620CCC489006A2D0B /* main.m */; };
-		FF3E640520CCE283006A2D0B /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = FF3E63FE20CCE283006A2D0B /* index.js */; };
 		FF3E640620CCE283006A2D0B /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = FF3E63FF20CCE283006A2D0B /* package-lock.json */; };
 		FF3E640820CCE283006A2D0B /* Main.js in Resources */ = {isa = PBXBuildFile; fileRef = FF3E640120CCE283006A2D0B /* Main.js */; };
 		FF3E640920CCE283006A2D0B /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = FF3E640220CCE283006A2D0B /* package.json */; };
@@ -25,6 +24,7 @@
 		FFAB732E20EDEE7900095C87 /* RNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAB732D20EDEE7900095C87 /* RNNavigationController.m */; };
 		FFAB733D20EDF67F00095C87 /* NavigationMain.js in Resources */ = {isa = PBXBuildFile; fileRef = FFAB733C20EDF67F00095C87 /* NavigationMain.js */; };
 		FFB8A95220CE633100964257 /* commModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB8A95120CE633100964257 /* commModule.m */; };
+		FFCFA45B216B3504002BDDE7 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = FFCFA45A216B3504002BDDE7 /* index.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,6 @@
 		FF3E63F320CCC489006A2D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF3E63F520CCC489006A2D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF3E63F620CCC489006A2D0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF3E63FE20CCE283006A2D0B /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.js; path = RN/index.js; sourceTree = SOURCE_ROOT; };
 		FF3E63FF20CCE283006A2D0B /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "package-lock.json"; path = "RN/package-lock.json"; sourceTree = SOURCE_ROOT; };
 		FF3E640120CCE283006A2D0B /* Main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Main.js; path = RN/Main.js; sourceTree = SOURCE_ROOT; };
 		FF3E640220CCE283006A2D0B /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = package.json; path = RN/package.json; sourceTree = SOURCE_ROOT; };
@@ -57,6 +56,7 @@
 		FFAB733C20EDF67F00095C87 /* NavigationMain.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = NavigationMain.js; path = RN/NavigationMain.js; sourceTree = SOURCE_ROOT; };
 		FFB8A95020CE633100964257 /* commModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commModule.h; sourceTree = "<group>"; };
 		FFB8A95120CE633100964257 /* commModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = commModule.m; sourceTree = "<group>"; };
+		FFCFA45A216B3504002BDDE7 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 		FF3E63FD20CCE26C006A2D0B /* RN */ = {
 			isa = PBXGroup;
 			children = (
+				FFCFA459216B3504002BDDE7 /* Entrance */,
 				FF3E640420CCE283006A2D0B /* App.js */,
-				FF3E63FE20CCE283006A2D0B /* index.js */,
 				FFAB733C20EDF67F00095C87 /* NavigationMain.js */,
 				FF3E640120CCE283006A2D0B /* Main.js */,
 				FF3E63FF20CCE283006A2D0B /* package-lock.json */,
@@ -146,6 +146,15 @@
 			name = RN;
 			path = "New Group";
 			sourceTree = "<group>";
+		};
+		FFCFA459216B3504002BDDE7 /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				FFCFA45A216B3504002BDDE7 /* index.js */,
+			);
+			name = Entrance;
+			path = RN/Entrance;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -205,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCFA45B216B3504002BDDE7 /* index.js in Resources */,
 				FF3E640B20CCE283006A2D0B /* App.js in Resources */,
 				FF3E640920CCE283006A2D0B /* package.json in Resources */,
 				FFAB733D20EDF67F00095C87 /* NavigationMain.js in Resources */,
@@ -212,7 +222,6 @@
 				FF3E63F120CCC489006A2D0B /* Assets.xcassets in Resources */,
 				FF3E640620CCE283006A2D0B /* package-lock.json in Resources */,
 				FF3E63EF20CCC488006A2D0B /* Main.storyboard in Resources */,
-				FF3E640520CCE283006A2D0B /* index.js in Resources */,
 				FF3E640820CCE283006A2D0B /* Main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,7 +23,7 @@
     
     // 方法2
     NSDictionary *initialParams = @{@"key":@"初始化参数",@"page":@"ocview"};
-    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"./Entrance/index" fallbackResource:nil];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"HelloWord"
                                                  initialProperties:initialParams

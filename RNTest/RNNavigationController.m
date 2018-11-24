@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSDictionary *initialDic = @{@"pageName":@"MyHome"};
+    NSDictionary *initialDic = @{@"pageName":@"MyHome",@"token":@"1234567890"};
     NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings]jsBundleURLForBundleRoot:@"NavigationMain" fallbackResource:nil];
     RCTRootView *rootView = [[RCTRootView alloc]initWithBundleURL:jsCodeLocation moduleName:@"NavMain" initialProperties:initialDic launchOptions:nil];
     self.view = rootView;
